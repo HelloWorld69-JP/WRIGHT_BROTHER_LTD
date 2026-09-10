@@ -1,0 +1,339 @@
+################################################################################################################################
+#
+#Release          : HW2019
+#File             : ConfigurationFileAttributes.txt
+#Date             : jun 5 2019
+#Created by       : Altair Engineering, Inc
+#Purpose          : Message for entity and attributelist
+#
+################################################################################################################################
+
+################################################################################################################################
+#
+#1. Pamcrash Data Source Name (same as name of entity dislayed in Solver browser Tree)
+#2. Pamcrash Entity Name
+#3. Dyna Entity Name
+#4. Titles of Pamcrash Attributes mapped
+#5. Titles of Pamcrash Attributes not mapped
+#6. Message for entity
+#7 and onwards List of attributes with value and status "Attribute Numeber,Value,Status" supported in conversion
+#
+################################################################################################################################
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Nastran Data Source Name | Pamcrash | Dyna | Attribute Mapped | Attributes not mapped | Comments | Attributes To Check
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*SetConversion
+*END
+
+*CardConversion
+"AIRBAGCHECK/AIRBAGCHECK" "AIRBAGCHECK" "" "" "" "Conversion not supported" ""
+"ANALYSIS/ANALYSIS" "ANALYSIS" "" "" "" "Conversion not supported" ""
+"CCTRL/CCTRL" "CCTRL" "" "" "" "Conversion not supported" ""
+"COUPLING/COUPLING" "COUPLING" "" "" "" "Conversion not supported" ""
+"DATACHECK/DATACHECK" "DATACHECK" "" "" "" "Conversion not supported" ""
+"DCOMP/DCOMP" "DCOMP" "" "" "" "Conversion not supported" ""
+"DEBUG/DEBUG" "DEBUG" "" "" "" "Conversion not supported" ""
+"ECTRL/ECTRL" "ECTRL" "" "" "" "Conversion not supported" ""
+"ENDDATA/ENDDATA" "ENDDATA" "" "" "" "Conversion not supported" ""
+"FILE/FILE" "FILE" "" "" "" "Conversion not supported" ""
+"INCLU/INCLU" "INCLU" "" "" "" "Conversion not supported" ""
+"INPUTVERSION/INPUTVERSION" "INPUTVERSION" "" "" "" "Conversion not supported" ""
+"MAXMEMORY/MAXMEMORY" "MAXMEMORY" "" "" "" "Conversion not supported" ""
+"MERGEGAP/MERGEGAP" "MERGEGAP" "" "" "" "Conversion not supported" ""
+"METRIC/METRIC" "METRIC" "" "" "" "Conversion not supported" ""
+"METRICCHECK/METRICCHECK" "METRICCHECK" "" "" "" "Conversion not supported" ""
+"NVHFILES/NVHFILES" "NVHFILES" "" "" "" "Conversion not supported" ""
+"OCTRL/OCTRL" "CTRL_OCTRL" "ENG_FILEDATA" "Time Interval,Point" "" "" ""
+"PIPE/PIPE" "PIPE" "" "" "" "Conversion not supported" ""
+"RESTARTFILES/RESTARTFILES" "RESTARTFILES" "" "" "" "Conversion not supported" ""
+"RUNEND/RUNEND" "CTRL_RUNEND" "ENG_FILEDATA" "Termination Time" "" "" ""
+"SHELLCHECK/SHELLCHECK" "SHELLCHECK" "" "" "" "Conversion not supported" ""
+"SIGNAL/SIGNAL" "SIGNAL" "" "" "" "Conversion not supported" ""
+"SOLIDCHECK/SOLIDCHECK" "SOLIDCHECK" "" "" "" "Conversion not supported" ""
+"SOLID4N/SOLID4N" "SOLID4N" "" "" "" "Conversion not supported" ""
+"SOLVER/SOLVER" "SOLVER" "" "" "" "Conversion not supported" ""
+"STAGEFILES/STAGEFILES" "STAGEFILES" "" "" "" "Conversion not supported" ""
+"STOPRUN/STOPRUN" "STOPRUN" "" "" "" "Conversion not supported" ""
+"SUBDF/SUBDF" "SUBDF" "" "" "" "Conversion not supported" ""
+"SUBRUN/SUBRUN" "SUBRUN" "" "" "" "Conversion not supported" ""
+"TCTRL/TCTRL" "TCTRL" "" "" "" "Conversion not supported" ""
+"TITLE/TITLE" "CTRL_TITLE" "" "" "" "Conversion not supported" ""
+"UNIT/UNIT" "UNIT" "" "" "" "Conversion not supported" ""
+*END
+
+*PropertyConversion
+"GASPEC/GASPEC" "GASPEC" "" "" "" "Conversion not supported" ""
+*END
+
+*MaterialBehaviorsConversion
+"RUPMO/TYPE 0" "RUPMO" "" "" "" "Conversion not supported" ""
+"RUPMO/TYPE 1" "RUPMO" "" "" "" "Conversion not supported" ""
+"RUPMO/TYPE 2" "RUPMO" "" "" "" "Conversion not supported" ""
+"RUPMO/TYPE 3" "RUPMO" "" "" "" "Conversion not supported" ""
+"RUPMO/TYPE 5" "RUPMO" "" "" "" "Conversion not supported" ""
+"RUPMO/TYPE 6" "RUPMO" "" "" "" "Conversion not supported" ""
+"RUPMO/TYPE 7" "RUPMO" "" "" "" "Conversion not supported" ""
+"RUPMO/TYPE 11" "RUPMO" "" "" "" "Conversion not supported" ""
+"RUPMO/TYPE 12" "RUPMO" "" "" "" "Conversion not supported" ""
+"RUPMO/TYPE 13" "RUPMO" "" "" "" "Conversion not supported" ""
+"RUPMO/TYPE 15" "RUPMO" "" "" "" "Conversion not supported" ""
+"NLAVE/NLAVE" "NLAVE" "" "" "" "Conversion not supported" ""
+*END
+
+*FrictionConversion
+"FRICT/FRICT" "FRICT" "" "" "" "Conversion not supported" ""
+"FRITAB/FRITAB" "FRITAB" "" "" "" "Conversion not supported" ""
+*END
+
+*ComponentConversion
+"PART/PART" "PART" "*PART" "" "" "Conversion supported" ""
+*END
+
+*MaterialConversion
+"MATERIAL_BEAM/TYPE 200" "MAT_1D Type 200" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 201" "MAT_1D Type 201" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 202" "MAT_1D Type 202" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 203" "MAT_1D Type 203" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 204" "MAT_1D Type 204" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 205" "MAT_1D Type 205" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 212" "MAT_1D Type 212" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 213" "MAT_1D Type 213" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 214" "MAT_1D Type 214" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 220" "MAT_1D Type 220" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 221" "MAT_1D Type 221" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 222" "MAT_1D Type 222" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 223" "MAT_1D Type 223" "" "" "" "Conversion not supported" ""
+"MATERIAL_BEAM/TYPE 230" "MAT_1D Type 230" "" "" "" "Conversion not supported" ""
+"MATERIAL_LINK/TYPE 301" "MAT_1D Type 301" "" "" "" "Conversion not supported" ""
+"MATERIAL_LINK/TYPE 302" "MAT_1D Type 302" "" "" "" "Conversion not supported" ""
+"MATERIAL_LINK/TYPE 303" "MAT_1D Type 303" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 100" "MAT_2D Type 100" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 101" "MAT_2D Type 101" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 102" "MAT_2D Type 102" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 103" "MAT_2D Type 103" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 105" "MAT_2D Type 105" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 106" "MAT_2D Type 106" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 107" "MAT_2D Type 107" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 108" "MAT_2D Type 108" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 109" "MAT_2D Type 109" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 115" "MAT_2D Type 115" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 117" "MAT_2D Type 117" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 118" "MAT_2D Type 118" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 121" "MAT_2D Type 121" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 126" "MAT_2D Type 126" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 128" "MAT_2D Type 128" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 130" "MAT_2D Type 130" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 131" "MAT_2D Type 131" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 132" "MAT_2D Type 132" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 143" "MAT_2D Type 143" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 150" "MAT_2D Type 150" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 151" "MAT_2D Type 151" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 161" "MAT_2D Type 161" "" "" "" "Conversion not supported" ""
+"MATERIAL_SHELL/TYPE 171" "MAT_2D Type 171" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 1" "MAT_3D Type 1" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 2" "MAT_3D Type 2" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 5" "MAT_3D Type 5" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 7" "MAT_3D Type 7" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 11" "MAT_3D Type 11" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 16" "MAT_3D Type 16" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 17" "MAT_3D Type 17" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 18" "MAT_3D Type 18" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 20" "MAT_3D Type 20" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 21" "MAT_3D Type 21" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 22" "MAT_3D Type 22" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 25" "MAT_3D Type 25" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 26" "MAT_3D Type 26" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 30" "MAT_3D Type 30" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 31" "MAT_3D Type 31" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 36" "MAT_3D Type 36" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 37" "MAT_3D Type 37" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 41" "MAT_3D Type 41" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 45" "MAT_3D Type 45" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 52" "MAT_3D Type 52" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 61" "MAT_3D Type 61" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 71" "MAT_3D Type 71" "" "" "" "Conversion not supported" ""
+"MATERIAL_SOLID/TYPE 99" "MAT_3D Type 99" "" "" "" "Conversion not supported" ""
+"MAT_SECURE/MAT_SECURE" "MAT_SECURE" "" "" "" "Conversion not supported" ""
+"PLY/PLY" "PLY" "" "" "" "Conversion not supported" ""
+*END
+
+*SystemConversion
+"FRAME/FRAME" "FRAME" "" "" "" "Conversion not supported" ""
+*END
+
+*SystemCollectorConversion
+*END
+
+*LoadcollectorConversion
+"ACC3D/ACC3D " "ACC3D" "" "" "" "Conversion not supported" ""
+"ACC3D/ACC3D" "ACC3D" "" "" "" "Conversion not supported" ""
+"ACFLD/ACFLD" "DAMP" "" "" "" "Conversion not supported" ""
+"BOUNC/BOUNC " "BOUNC" "" "" "" "Conversion not supported" ""
+"BOUNC/BOUNC" "BOUNC" "" "" "" "Conversion not supported" ""
+"CONLO/CONLO " "CONLO" "" "" "" "Conversion not supported" ""
+"CONLO/CONLO" "CONLO" "" "" "" "Conversion not supported" ""
+"DAMP/DAMP" "DAMP" "" "" "" "Conversion not supported" ""
+"DIS3D/DIS3D " "DIS3D" "" "" "" "Conversion not supported" ""
+"DIS3D/DIS3D" "DIS3D" "" "" "" "Conversion not supported" ""
+"DIS3DX/DIS3DX " "DIS3DX" "" "" "" "Conversion not supported" ""
+"DIS3DX/DIS3DX" "DIS3DX" "" "" "" "Conversion not supported" ""
+"DIS3DM/DIS3DM " "DIS3DM" "" "" "" "Conversion not supported" ""
+"DIS3DM/DIS3DM" "DIS3DM" "" "" "" "Conversion not supported" ""
+"INVEL/INVEL " "INVEL" "" "" "" "Conversion not supported" ""
+"INVEL/INVEL" "INVEL" "" "" "" "Conversion not supported" ""
+"PREBM/PREBM" "PREBM" "" "" "" "Conversion not supported" ""
+"PREFA/PREFA " "PREFA" "" "" "" "Conversion not supported" ""
+"PREFA/PREFA" "PREFA" "" "" "" "Conversion not supported" ""
+"RAC3D/RAC3D " "RAC3D" "" "" "" "Conversion not supported" ""
+"RAC3D/RAC3D" "RAC3D" "" "" "" "Conversion not supported" ""
+"RAN3D/RAN3D " "RAN3D" "" "" "" "Conversion not supported" ""
+"RAN3D/RAN3D" "RAN3D" "" "" "" "Conversion not supported" ""
+"RDA3D/RDA3D " "RDA3D" "" "" "" "Conversion not supported" ""
+"RDA3D/RDA3D" "RDA3D" "" "" "" "Conversion not supported" ""
+"RDD3D/RDD3D " "RDD3D" "" "" "" "Conversion not supported" ""
+"RDD3D/RDD3D" "RDD3D" "" "" "" "Conversion not supported" ""
+"RDV3D/RDV3D " "RDV3D" "" "" "" "Conversion not supported" ""
+"RDV3D/RDV3D" "RDV3D" "" "" "" "Conversion not supported" ""
+"RVE3D/RVE3D " "RVE3D" "" "" "" "Conversion not supported" ""
+"RVE3D/RVE3D" "RVE3D" "" "" "" "Conversion not supported" ""
+"VEL3D/VEL3D " "VEL3D" "" "" "" "Conversion not supported" ""
+"VEL3D/VEL3D" "VEL3D" "" "" "" "Conversion not supported" ""
+*END
+
+*LoadstepConversion
+*END
+
+*CurveConversion
+"FUNCT/FUNCT" "FUNCT" "" "" "" "Conversion not supported" ""
+*END
+
+*BlockConversion
+*END
+
+*GroupConversion
+"CNTAC/CNTAC1" "CNTAC1" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC10" "CNTAC10" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC13" "CNTAC13" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC14" "CNTAC14" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC15" "CNTAC15" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC16" "CNTAC16" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC17" "CNTAC17" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC18" "CNTAC18" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC19" "CNTAC19" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC21" "CNTAC21" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC33" "CNTAC33" "*CONTACT_AUTOMATIC_SURFACE_TO_SURFACE_ID" "" "" "" ""
+"CNTAC/CNTAC34" "CNTAC34" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC36" "CNTAC36" "*CONTACT_AUTOMATIC_SINGLE_SURFACE_ID" "" "" "" ""
+"CNTAC/CNTAC54" "CNTAC54" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC37" "CNTAC37" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC44" "CNTAC44" "" "" "" "Conversion not supported" ""
+"CNTAC/CNTAC46" "CNTAC46" "*CONTACT_AUTOMATIC_GENARAL_ID" "" "" "" ""
+"RWALL/RWALL " "RWALL" "" "" "" "Conversion not supported" ""
+"RWALL/RWALL" "RWALL" "" "" "" "Conversion not supported" ""
+"SECFO/PLANE" "PLANE" "" "" "" "Conversion not supported" ""
+"SECFO/SECTION" "SECTION" "" "" "" "Conversion not supported" ""
+"SECFO/SUPPORT" "SUPPORT" "" "" "" "Conversion not supported" ""
+"SECFO/VOLFRAC" "VOLFRAC" "" "" "" "Conversion not supported" ""
+"SECFO/CONTACT" "CONTACT" "" "" "" "Conversion not supported" ""
+"SECFO/LINK" "LINK" "" "" "" "Conversion not supported" ""
+"SECFO/CONT_MS" "CONT_MS" "" "" "" "Conversion not supported" ""
+"SECFO/DETECT" "DETECT" "" "" "" "Conversion not supported" ""
+"TIED/TIED" "TIED" "*CONTACT_TIED_SHELL_EDGE_TO_SURFACE_BEAM_OFSET_ID" "" "" "" ""
+*END
+
+*ContactSurfaceConversion
+*END
+
+*SensorConversion
+"SENSOR/SENSOR" "SENSOR" "" "" "" "Conversion not supported" ""
+*END
+
+*AssemblyConversion
+*END
+
+*OutputBlockConversion
+"THELE/THELE" "THELE" "" "" "" "Conversion not supported" ""
+"THNOD/THNOD" "THNOD" "" "" "" "Conversion not supported" ""
+"THLOC/THLOC" "THLOC" "" "" "" "Conversion not supported" ""
+*END
+
+*ElementConversion
+"BAR/BAR" "BAR" "" "" "" "Conversion not supported" ""
+"BEAM/BEAM" "BEAM" "bar2" "CBEAM" "" "Conversion supported" ""
+"BSHEL/BSHEL" "BSHEL" "" "" "" "Conversion not supported" ""
+"EDG/EDG" "EDG" "" "" "" "Conversion not supported" ""
+"ELINK/ELINK" "ELINK" "" "" "" "Conversion not supported" ""
+"JOINT/JOINT" "JOINT" "" "" "" "Conversion not supported" ""
+"KJOIN/KJOIN" "KJOIN" "" "" "" "Conversion not supported" ""
+"LLINK/LLINK" "LLINK" "" "" "" "Conversion not supported" ""
+"MEMBR/MEMBR (TRIA)" "MEMBR" "" "" "" "Conversion not supported" ""
+"MEMBR/MEMBR " "MEMBR" "" "" "" "Conversion not supported" ""
+"MEMBR/MEMBR" "MEMBR" "" "" "" "Conversion not supported" ""
+"NODCO/NODCO" "NODCO" "" "" "" "Conversion not supported" ""
+"PLINK/PLINK" "PLINK" "" "" "" "Conversion not supported" ""
+"PLINK_VIS/PLINK_VIS" "PLINK_VIS" "" "" "" "Conversion not supported" ""
+"RBODY/RBODY (RIGID)" "rigid" "RBE2" "" "Conversion supported" ""
+"RBODY/RBODY (WELD)" "RBODY" "" "" "" "Conversion not supported" ""
+"RETRACTR/RETRACTR" "RETRACTR" "" "" "" "Conversion not supported" ""
+"SEG/SEG (TRIA)" "SEG" "" "" "" "Conversion not supported" ""
+"SEG/SEG " "SEG" "" "" "" "Conversion not supported" ""
+"SEG/SEG" "SEG" "" "" "" "Conversion not supported" ""
+"SENPT/SENPT" "SENPT" "" "" "" "Conversion not supported" ""
+"SHELL/SHELL (TRIA-3N)" "tria3" "SHELL" "" "Conversion supported" ""
+"SHELL/SHELL (TRIA-4N)" "tria3" "SHELL" "" "Conversion supported" ""
+"SHELL/SHELL " "SHELL" "quad4" "SHELL" "" "Conversion supported" ""
+"SLINK/SLINK " "SLINK" "" "" "" "Conversion not supported" ""
+"SLINK/SLINK" "SLINK" "" "" "" "Conversion not supported" ""
+"SLINK/SLINK (TRIA)" "SLINK" "" "" "" "Conversion not supported" ""
+"SLIPRING/SLIPRING" "SLIPRING" "" "" "" "Conversion not supported" ""
+"SOLID/SOLID (TETRA)" "tetra4" "SOLID" "" "Conversion supported" ""
+"SOLID/SOLID (PYRAMID)" "SOLID" "pyramid5" "SOLID" "" "Conversion supported" ""
+"SOLID/SOLID (PENTA)" "penta6" "SOLID" "" "Conversion supported" ""
+"SOLID/SOLID (HEX)" "hex8" "SOLID" "" "Conversion supported" ""
+"SPRGBM/SPRGBM" "SPRGBM" "bar2" "CBEAM" "" "Conversion supported" ""
+"SPRING/SPRING" "SPRING" "spring" "DISCRETE" "" "Conversion supported" ""
+"TSHEL/TSHEL" "TSHEL" "" "" "" "Conversion not supported" ""
+*END
+
+*SolverMassConversion
+"MASS/MASS" "MASS" "mass" "MASS" "" "Conversion supported" ""
+"NSMAS/NSMAS" "NSMAS" "" "" "" "Conversion not supported" ""
+*END
+
+*LoadConversion
+"ACC3D/ACC3D (NODES)" "ACC3D" "" "" "" "Conversion not supported" ""
+"BOUNC/BOUNC (NODES)" "BOUNC" "constraint" "SPC" "" "Conversion supported" ""
+"CONLO/CONLO (FORCES)" "CONLO" "" "" "" "Conversion not supported" ""
+"CONLO/CONLO (MOMENTS)" "CONLO" "" "" "" "Conversion not supported" ""
+"DIS3D/DIS3D (NODES)" "DIS3D" "" "" "" "Conversion not supported" ""
+"DIS3DX/DIS3DX (NODES)" "DIS3DX" "" "" "" "Conversion not supported" ""
+"DIS3DM/DIS3DM (NODES)" "DIS3DM" "" "" "" "Conversion not supported" ""
+"INVEL/INVEL (NODES)" "INVEL" "" "" "" "Conversion not supported" ""
+"PREFA/PREFA (ELEMENTS)" "PREFA" "" "" "" "Conversion not supported" ""
+"RAC3D/RAC3D (NODES)" "RAC3D" "" "" "" "Conversion not supported" ""
+"RAN3D/RAN3D (NODES)" "RAN3D" "" "" "" "Conversion not supported" ""
+"RDA3D/RDA3D (NODES)" "RDA3D" "" "" "" "Conversion not supported" ""
+"RDD3D/RDD3D (NODES)" "RDD3D" "" "" "" "Conversion not supported" ""
+"RDV3D/RDV3D (NODES)" "RDV3D" "" "" "" "Conversion not supported" ""
+"RVE3D/RVE3D (NODES)" "RVE3D" "" "" "" "Conversion not supported" ""
+"VEL3D/VEL3D (NODES)" "VEL3D" "" "" "" "Conversion not supported" ""
+*END
+
+*VectorCollectorConversion
+"ADAPT/ADAPT" "ADAPT" "" "" "" "Conversion not supported" ""
+"PICK/PICK" "PICK" "" "" "" "Conversion not supported" ""
+*END
+
+*ControlVolumeConversion
+"BAGIN/BAGIN_1" "BAGIN" "" "" "" "Conversion not supported" ""
+*END
+
+*BeamSectionCollectorConversion
+"BELTS/BELTS" "BELTS" "" "" "" "Conversion not supported" ""
+*END
+
+*CommentConversion
+"CDATA/CDATA" "CDATA" "" "" "" "Conversion not supported" ""
+*END

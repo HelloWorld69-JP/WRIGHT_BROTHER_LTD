@@ -1,0 +1,60 @@
+################################################################################################################################
+#
+# Release          : HW19.0
+# File             : Configuration.txt (Standard.3d)
+# Date             : June 19, 2019
+# Created by       : Altair Engineering, Inc
+# Purpose          : User specified file for conversion of Pamcrash entity and corresponding LsDyna entity
+#
+################################################################################################################################
+
+################################################################################################################################
+#   Elements for conversion
+#
+#   Format: (Pamcrash element config),(Pamcrash element type) (LsDyna element config),(LsDyna element type)
+#
+#   Warning: No space between the comma seperated values are allowed
+#   For exapmle "rigid, RBODY rigid, RgdBody" is wrong, but "rigid,RBODY rigid,RgdBody" is correct
+################################################################################################################################
+*Source
+Pamcrash2G
+
+*Destination
+LsDyna
+
+*ConversionOptions
+ImplicitConversionOption     0
+*END
+
+*ElemTypeConversion
+rigid,RBODY rigid,RgdBody
+rigid,MTOCO rigid,RgdBody
+rigidlink,RBODY rigidlink,RgdBody
+rigidlink,MTOCO rigidlink,RgdBody
+
+bar2,BEAM bar2,BEAM
+
+tria3,TRIA_C tria3,SHELL
+tria3,SHELL tria3,SHELL
+tria3,MEMBR tria3,SHELL
+tria3,SLINK tria3,SHELL
+tria3,SEG tria3,SHELL
+
+quad4,SHELL quad4,SHELL
+quad4,MEMBR quad4,SHELL
+quad4,TSHEL quad4,SHELL
+quad4,SLINK quad4,SHELL
+quad4,SEG quad4,SHELL
+
+tetra4,SOLID tetra4,SOLID
+tetra4,TETR4 tetra4,SOLID
+pyramid5,SOLID pyramid5,SOLID
+penta6,SOLID penta6,SOLID
+penta6,PENTA6 penta6,TSHELL
+hex8,SOLID hex8,SOLID
+hex8,BSHEL hex8,TSHELL
+tetra10,TETR10 tetra10,SOLID
+tetra10,TETRA tetra10,SOLID
+spring,SPRING spring,DISCRETE 
+spring,SPRGBM bar2,BEAM 
+*END
